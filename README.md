@@ -8,6 +8,9 @@ Special thanks to balika011, .silent, n3ptun0.
 
 Edited by: Cizaquita.
 
+Download Latest
+https://github.com/cizaquita/FakeSAMP/releases
+
 --
 ### Client
 **Available runmodes in the client:**
