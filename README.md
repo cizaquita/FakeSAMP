@@ -1,10 +1,12 @@
-RakSAMP
-=======
-RakSAMP is a fake client and server for SA-MP.  
+FakeSAMP
+=
+FakeSAMP is a fake client for SA-MP.
   
 Current version: v0.8.6-0.3.7.  
-Authors: jlfm, bartekdvd, P3ti.  
+Authors: jlfm, bartekdvd, P3ti.
 Special thanks to balika011, .silent, n3ptun0.  
+
+Edited by: Cizaquita.
 
 --
 ### Client
@@ -21,7 +23,6 @@ Special thanks to balika011, .silent, n3ptun0.
 * !reconnect: reconnects the server.
 * !reload: reloads settings.
 * !runmode: sets current runmode.
-* !stats: shows raknet statistics.
 * !players: shows list of players.
 * !npcs: show list of NPCs.
 * !login: login to RCON.
@@ -52,7 +53,7 @@ Special thanks to balika011, .silent, n3ptun0.
 * !pulsator: pulse health & armor.
 * !change_server: connect to another server without restarting RakSAMPClient.
 * !change_name: change the fake player's name and reconnect/rejoin the game.
-* !dialogresponse: send a dialog response.
+* !diares: send a dialog response.
 * !logstatus: show log status.
 * !log: toggle logging objects/pickups/textlabels/textdraws.
 * !teleport: show the teleport menu.
@@ -62,82 +63,10 @@ Special thanks to balika011, .silent, n3ptun0.
 * !sendrates: show sendrates.
 
 --
-### Server
-You can create LUA scripts for the server.
-  
-**Limits in the server:**
-* Max players: 1000.
-* Max vehicles: 2000.
-* Max scripts: 32.
-  
-**Available scripting events in the server:**
-* onScriptStart
-* onScriptExit
-* onNewQuery
-* onNewConnection
-* onPlayerJoin
-* onPlayerDisconnect
-* onPlayerRequestClass
-* onPlayerSpawn
-* onPlayerDeath
-* onPlayerDamageVehicle
-* onPlayerWantsEnterVehicle
-* onPlayerLeaveVehicle
-* onPlayerMessage
-* onPlayerCommand
-* onPlayerWeaponShot
-* onPlayerEnterCheckpoint
-* onPlayerLeaveCheckpoint
-* onPlayerClickMap
-* onDialogResponse
-* onPlayerInteriorChange
-* onScmEvent
-  
-**Available scripting functions in the server:**
-* outputConsole
-* setGameModeText
-* setMapName
-* setWebURL
-* isPlayerConnected
-* getPlayerName
-* getPlayerPos
-* setPlayerPos
-* setPlayerPosFindZ
-* getPlayerInterior
-* setPlayerInterior
-* getPlayerScore
-* setPlayerScore
-* getPlayerIP
-* getPlayerPing
-* getPlayerVehicleID
-* sendPlayerMessage
-* sendPlayerChatMessage
-* sendPlayerChatMessageToAll
-* setPlayerRotation
-* setPlayerCameraPos
-* setPlayerCameraLookAt
-* setCameraBehindPlayer
-* givePlayerMoney
-* resetPlayerMoney
-* setPlayerHealth
-* setPlayerArmour
-* addStaticVehicle
-* createVehicle
-* removeVehicle
-* repairVehicle
-* setVehicleHealth
-* giveWeapon
-* setWeaponAmmo
-* clearPlayerWeapons
-* playAudioStreamForPlayer
-* stopAudioStreamForPlayer
-* sendDeathMessage
-* sendDeathMessageForPlayer
-* setGravity
-* setPlayerGravity
-* setPlayerCheckpoint
-* disablePlayerCheckpoint
-* gameTextForAll
-* gameTextForPlayer
-* showPlayerDialog
-* broadcastScmEvent
+### Edit and Build instructions
+
+1. Download C++ IDE http://download.microsoft.com/download/A/5/4/A54BADB6-9C3F-478D-8657-93B3FC9FE62D/vcsetup.exe
+2. Open Solution RakSAMP_2008.sln
+3. Edit, Debug
+
+Enjoy!
