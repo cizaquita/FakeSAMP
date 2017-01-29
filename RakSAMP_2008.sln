@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C++ Express 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RakSAMPClient", "client\src\RakSAMPClient_2008.vcproj", "{450EB8E3-A369-464E-9718-030CD34A2C26}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|Win32 = Debug|Win32
+		Release|ARM = Release|ARM
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{450EB8E3-A369-464E-9718-030CD34A2C26}.Debug|ARM.ActiveCfg = Debug|Win32
+		{450EB8E3-A369-464E-9718-030CD34A2C26}.Debug|ARM.Build.0 = Debug|Win32
+		{450EB8E3-A369-464E-9718-030CD34A2C26}.Debug|Win32.ActiveCfg = Release|Win32
+		{450EB8E3-A369-464E-9718-030CD34A2C26}.Debug|Win32.Build.0 = Release|Win32
+		{450EB8E3-A369-464E-9718-030CD34A2C26}.Release|ARM.ActiveCfg = Release|Win32
+		{450EB8E3-A369-464E-9718-030CD34A2C26}.Release|ARM.Build.0 = Release|Win32
+		{450EB8E3-A369-464E-9718-030CD34A2C26}.Release|Win32.ActiveCfg = Release|Win32
+		{450EB8E3-A369-464E-9718-030CD34A2C26}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

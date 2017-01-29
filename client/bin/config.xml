@@ -1,0 +1,92 @@
+<!--
+Avalable runmodes:
+	0 = RCON mode
+	1 = Bare mode (doesn't spawn)
+	2 = Still mode (stays still at spawn position)
+	3 = Normal mode (stays still at a position)
+	4 = Follows a player
+	5 = Follows a player with a vehicle
+-->
+
+<FakeSAMP console="0" runmode="3" autorun="0" find="1" select_classid="0" manual_spawn="1"
+			   print_timestamps="1" chatcolor_rgb="0 0 130" clientmsg_rgb="0 130 0" cpalert_rgb="170 0 0"
+			   followplayer="Cris_Iza1" followplayerwithvehicleid="295" followXOffset="-1.5" followYOffset="1.5" followZOffset="0.0"
+			   updatestats="1" minfps="20" maxfps="90" clientversion="0.3.7">
+
+	<server nickname="Cris_Iza" password="iza0000">127.0.0.1:7777</server>
+
+	<intervals spam="150" fakekill="35" lag="20" joinflood="50" chatflood="20" classflood="30" bulletflood="25" />
+	<log objects="0" pickups="0" textlabels="0" textdraws="0" />
+	<sendrates force="0" onfoot="40" incar="40" firing="40" multiplier="1" />
+
+	<!-- In normal mode this will be your default position, but if you don't set 'force' to 1, then the server can move you with SetPlayerPos, SetPlayerFacingAngle or SetSpawnInfo. -->
+	<normal_pos position="325.35 2512.09 16.56" rotation="0.0" force="0" />
+
+	<!-- These get called when we successfully connected to a server. -->
+	<!-- <autorun>!selveh 4</autorun> -->
+	
+	<!-- Finds text from the chatbox and says something. -->
+	<find text="cris" say="/r que pasa bro ++nDime" bk_color="255 255 255" text_color="255 0 0" />
+	<find text="rcon" say="!runmode 0" bk_color="255 255 255" text_color="255 0 0" />
+	<find text="bare" say="!runmode 1" bk_color="255 255 255" text_color="255 0 0" />
+	<find text="nada" say="!runmode 2" bk_color="255 255 255" text_color="255 0 0" />
+	<find text="Normal" say="!runmode 2" bk_color="255 255 255" text_color="255 0 0" />
+	<find text="Sigueme" say="!runmode 4" bk_color="255 255 255" text_color="255 0 0" />
+	<find text="sube" say="!runmode 5" bk_color="255 255 255" text_color="255 0 0" />
+	
+	<!-- You can add custom teleport locations. These are accessible with !teleport command. (Limit: 200) -->
+	<teleport name="Grove Street" position="2536.08 -1632.98 13.79" />
+	<teleport name="4D casino" position="1992.93 1047.31 10.82" />
+	<teleport name="LS Hospital" position="2033.00 -1416.02 16.99" />
+	<teleport name="SF Hospital" position="-2653.11 634.78 14.45" />
+	<teleport name="LV Hospital" position="1580.22 1768.93 10.82" />
+	<teleport name="SF Export" position="-1550.73 99.29 17.33" />
+	
+	<!--
+	Available commands:
+		!exit or !quit: exits client.
+		!reconnect: reconnects the server.
+		!reload: reloads settings.
+		!runmode: sets current runmode.
+		!stats: shows raknet statistics.
+		!players: shows list of players.
+		!npcs: show list of NPCs.
+		!login: login to RCON.
+		!rcon: send an RCON command.
+		!goto: go to players position.
+		!gotocp: go to the current checkpoint.
+		!autogotocp: toggle automatic checkpoint teleporter.
+		!imitate: change imitate name.
+		!vlist: shows list of vehicles.
+		!vdeath: send vehicle death notification.
+		!fu: send lost connection packet to server.
+		!spawn: spawns fake player.
+		!pickup: pick up a pickup by ID.
+		!class: select a class.
+		!menusel: selects an item from the GTA menu.
+		!kill: toggle fake kill flooder.
+		!lag: toggle server lagger.
+		!spam: toggle reconnect spammer.
+		!joinflood: toggle join flooder.
+		!chatflood: toggle chat flooder.
+		!classflood: toggle class selection flooder.
+		!bulletflood: flood the server with bullet sync packets to the players' positions.
+		!weapon: sets the current weapon in the fake player's hand.
+		!selplayer: sets the followed player's name.
+		!selveh: sets the fake player's vehicle.
+		!pos: sets the fake player's position.
+		!follow: sets the following offset.
+		!pulsator: pulse health & armor.
+		!change_server: connect to another server without restarting RakSAMPClient.
+		!change_name: change the fake player's name and reconnect/rejoin the game.
+		!dialogresponse: send a dialog response.
+		!logstatus: show log status.
+		!log: toggle logging objects/pickups/textlabels/textdraws.
+		!teleport: show the teleport menu.
+		!scmevent: send SCM event.
+		!fakekick: send vehicle enter notification with invalid vehicle id to get kicked.
+		!seltd: select a textdraw.
+		!sendrates: show sendrates.
+	-->
+
+</FakeSAMP>

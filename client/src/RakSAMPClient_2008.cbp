@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="RakSAMPClient" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release Win32">
+				<Option output="./../bin/RakSAMPClient" prefix_auto="1" extension_auto="1" />
+				<Option object_output="./obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-D_CONSOLE" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE" />
+					<Add option="-DRAKSAMP_CLIENT" />
+					<Add option="-W" />
+					<Add option="-O2" />
+					<Add directory="./" />
+					<Add directory="../../raknet/" />
+					<Add directory="../../raknet/SAMP/" />
+					<Add directory="sqlite3/" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="./" />
+					<Add directory="../../raknet/" />
+					<Add directory="../../raknet/SAMP/" />
+					<Add directory="sqlite3/" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="ws2_32" />
+					<Add library="comctl32" />
+					<Add directory="sqlite3/" />
+				</Linker>
+			</Target>
+			<Target title="Debug Win32">
+				<Option output="./../bin/RakSAMPClient" prefix_auto="1" extension_auto="1" />
+				<Option object_output="./obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-DDEBUG" />
+					<Add option="-D_CRT_SECURE_NO_WARNINGS" />
+					<Add option="-DRAKSAMP_CLIENT" />
+					<Add option="-D_RAKNET_THREADSAFE" />
+					<Add option="-W" />
+					<Add option="-O2" />
+					<Add directory="./" />
+					<Add directory="../../raknet/" />
+					<Add directory="../../raknet/SAMP/" />
+					<Add directory="sqlite3/" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="./" />
+					<Add directory="../../raknet/" />
+					<Add directory="../../raknet/SAMP/" />
+					<Add directory="sqlite3/" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="ws2_32" />
+					<Add library="comctl32" />
+					<Add directory="sqlite3/" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="../../common/common.cpp" />
+		<Unit filename="../../common/common.h" />
+		<Unit filename="../../raknet/AsynchronousFileIO.cpp" />
+		<Unit filename="../../raknet/AsynchronousFileIO.h" />
+		<Unit filename="../../raknet/AutopatcherPatchContext.h" />
+		<Unit filename="../../raknet/AutopatcherRepositoryInterface.h" />
+		<Unit filename="../../raknet/BigTypes.h" />
+		<Unit filename="../../raknet/BitStream.cpp" />
+		<Unit filename="../../raknet/BitStream.h" />
+		<Unit filename="../../raknet/BitStream_NoTemplate.cpp" />
+		<Unit filename="../../raknet/BitStream_NoTemplate.h" />
+		<Unit filename="../../raknet/CheckSum.cpp" />
+		<Unit filename="../../raknet/CheckSum.h" />
+		<Unit filename="../../raknet/ClientContextStruct.h" />
+		<Unit filename="../../raknet/DS_BPlusTree.h" />
+		<Unit filename="../../raknet/DS_BinarySearchTree.h" />
+		<Unit filename="../../raknet/DS_ByteQueue.cpp" />
+		<Unit filename="../../raknet/DS_ByteQueue.h" />
+		<Unit filename="../../raknet/DS_Heap.h" />
+		<Unit filename="../../raknet/DS_HuffmanEncodingTree.cpp" />
+		<Unit filename="../../raknet/DS_HuffmanEncodingTree.h" />
+		<Unit filename="../../raknet/DS_HuffmanEncodingTreeFactory.h" />
+		<Unit filename="../../raknet/DS_HuffmanEncodingTreeNode.h" />
+		<Unit filename="../../raknet/DS_LinkedList.h" />
+		<Unit filename="../../raknet/DS_List.h" />
+		<Unit filename="../../raknet/DS_Map.h" />
+		<Unit filename="../../raknet/DS_MemoryPool.h" />
+		<Unit filename="../../raknet/DS_OrderedChannelHeap.h" />
+		<Unit filename="../../raknet/DS_OrderedList.h" />
+		<Unit filename="../../raknet/DS_Queue.h" />
+		<Unit filename="../../raknet/DS_QueueLinkedList.h" />
+		<Unit filename="../../raknet/DS_RangeList.h" />
+		<Unit filename="../../raknet/DS_Table.cpp" />
+		<Unit filename="../../raknet/DS_Table.h" />
+		<Unit filename="../../raknet/DS_Tree.h" />
+		<Unit filename="../../raknet/DS_WeightedGraph.h" />
+		<Unit filename="../../raknet/DataBlockEncryptor.cpp" />
+		<Unit filename="../../raknet/DataBlockEncryptor.h" />
+		<Unit filename="../../raknet/DataCompressor.cpp" />
+		<Unit filename="../../raknet/DataCompressor.h" />
+		<Unit filename="../../raknet/EncodeClassName.cpp" />
+		<Unit filename="../../raknet/Export.h" />
+		<Unit filename="../../raknet/GetTime.cpp" />
+		<Unit filename="../../raknet/GetTime.h" />
+		<Unit filename="../../raknet/InternalPacket.h" />
+		<Unit filename="../../raknet/InternalPacketPool.cpp" />
+		<Unit filename="../../raknet/InternalPacketPool.h" />
+		<Unit filename="../../raknet/LinuxStrings.cpp" />
+		<Unit filename="../../raknet/LinuxStrings.h" />
+		<Unit filename="../../raknet/MTUSize.h" />
+		<Unit filename="../../raknet/NetworkIDGenerator.cpp" />
+		<Unit filename="../../raknet/NetworkIDGenerator.h" />
+		<Unit filename="../../raknet/NetworkTypes.cpp" />
+		<Unit filename="../../raknet/NetworkTypes.h" />
+		<Unit filename="../../raknet/PacketEnumerations.h" />
+		<Unit filename="../../raknet/PacketPool.h" />
+		<Unit filename="../../raknet/PacketPriority.h" />
+		<Unit filename="../../raknet/PluginInterface.cpp" />
+		<Unit filename="../../raknet/PluginInterface.h" />
+		<Unit filename="../../raknet/RPCMap.cpp" />
+		<Unit filename="../../raknet/RPCMap.h" />
+		<Unit filename="../../raknet/RPCNode.h" />
+		<Unit filename="../../raknet/RSACrypt.h" />
+		<Unit filename="../../raknet/RakAssert.h" />
+		<Unit filename="../../raknet/RakClient.cpp" />
+		<Unit filename="../../raknet/RakClient.h" />
+		<Unit filename="../../raknet/RakClientInterface.h" />
+		<Unit filename="../../raknet/RakNetDefines.h" />
+		<Unit filename="../../raknet/RakNetStatistics.cpp" />
+		<Unit filename="../../raknet/RakNetStatistics.h" />
+		<Unit filename="../../raknet/RakNetworkFactory.cpp" />
+		<Unit filename="../../raknet/RakNetworkFactory.h" />
+		<Unit filename="../../raknet/RakPeer.cpp" />
+		<Unit filename="../../raknet/RakServer.h" />
+		<Unit filename="../../raknet/RakSleep.cpp" />
+		<Unit filename="../../raknet/RakSleep.h" />
+		<Unit filename="../../raknet/Rand.cpp" />
+		<Unit filename="../../raknet/Rand.h" />
+		<Unit filename="../../raknet/ReliabilityLayer.cpp" />
+		<Unit filename="../../raknet/ReliabilityLayer.h" />
+		<Unit filename="../../raknet/Replica.h" />
+		<Unit filename="../../raknet/ReplicaEnums.h" />
+		<Unit filename="../../raknet/RouterInterface.h" />
+		<Unit filename="../../raknet/SAMP/SAMPRPC.cpp" />
+		<Unit filename="../../raknet/SAMP/SAMPRPC.h" />
+		<Unit filename="../../raknet/SAMP/SAMP_VER.h" />
+		<Unit filename="../../raknet/SAMP/samp_auth.cpp" />
+		<Unit filename="../../raknet/SAMP/samp_auth.h" />
+		<Unit filename="../../raknet/SAMP/samp_netencr.cpp" />
+		<Unit filename="../../raknet/SAMP/samp_netencr.h" />
+		<Unit filename="../../raknet/SHA1.cpp" />
+		<Unit filename="../../raknet/SHA1.h" />
+		<Unit filename="../../raknet/SimpleMutex.cpp" />
+		<Unit filename="../../raknet/SimpleMutex.h" />
+		<Unit filename="../../raknet/SingleProducerConsumer.h" />
+		<Unit filename="../../raknet/SocketLayer.cpp" />
+		<Unit filename="../../raknet/SocketLayer.h" />
+		<Unit filename="../../raknet/StringCompressor.cpp" />
+		<Unit filename="../../raknet/StringCompressor.h" />
+		<Unit filename="../../raknet/StringTable.cpp" />
+		<Unit filename="../../raknet/StringTable.h" />
+		<Unit filename="../../raknet/SystemAddressList.cpp" />
+		<Unit filename="../../raknet/TableSerializer.cpp" />
+		<Unit filename="../../raknet/TableSerializer.h" />
+		<Unit filename="../../raknet/ThreadPool.h" />
+		<Unit filename="../../raknet/Types.h" />
+		<Unit filename="../../raknet/_findfirst.cpp" />
+		<Unit filename="../../raknet/_findfirst.h" />
+		<Unit filename="../../raknet/multiplayer.h" />
+		<Unit filename="../../raknet/rakpeer.h" />
+		<Unit filename="../../raknet/rakpeerinterface.h" />
+		<Unit filename="../../raknet/rakserver.cpp" />
+		<Unit filename="../../raknet/rakserverinterface.h" />
+		<Unit filename="../../raknet/rijndael-boxes.h" />
+		<Unit filename="../../raknet/rijndael.cpp" />
+		<Unit filename="../../raknet/rijndael.h" />
+		<Unit filename="../../raknet/systemaddresslist.h" />
+		<Unit filename="../../tinyxml/tinystr.cpp" />
+		<Unit filename="../../tinyxml/tinystr.h" />
+		<Unit filename="../../tinyxml/tinyxml.cpp" />
+		<Unit filename="../../tinyxml/tinyxml.h" />
+		<Unit filename="../../tinyxml/tinyxmlerror.cpp" />
+		<Unit filename="../../tinyxml/tinyxmlparser.cpp" />
+		<Unit filename="CVector.h" />
+		<Unit filename="RakSAMPClient.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="cmds.cpp" />
+		<Unit filename="cmds.h" />
+		<Unit filename="console.cpp" />
+		<Unit filename="console.h" />
+		<Unit filename="localplayer.cpp" />
+		<Unit filename="localplayer.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="main.h" />
+		<Unit filename="math_stuff.cpp" />
+		<Unit filename="math_stuff.h" />
+		<Unit filename="misc_funcs.cpp" />
+		<Unit filename="misc_funcs.h" />
+		<Unit filename="netgame.cpp" />
+		<Unit filename="netgame.h" />
+		<Unit filename="netrpc.cpp" />
+		<Unit filename="netrpc.h" />
+		<Unit filename="rcon.cpp" />
+		<Unit filename="rcon.h" />
+		<Unit filename="resource.h" />
+		<Unit filename="window.cpp" />
+		<Unit filename="window.h" />
+		<Unit filename="xmlsets.cpp" />
+		<Unit filename="xmlsets.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
