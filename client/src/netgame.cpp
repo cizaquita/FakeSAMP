@@ -544,7 +544,7 @@ void UpdateNetwork(RakClientInterface *pRakClient)
 			packetIdentifier = ( unsigned char ) pkt->data[ 0 ];
 
 		//Log("[SAMP] Packet received. PacketID: %d.", pkt->data[0]);
-		Log("[SAMP] Packet received. PacketID[0]: %d. PacketID[1]?: %d.", pkt->data[0], pkt->data[1]);
+		//Log("[SAMP] Packet received. PacketID[0]: %d. PacketID[1]?: %d.", pkt->data[0], pkt->data[1]);
 
 		switch(packetIdentifier)
 		{
