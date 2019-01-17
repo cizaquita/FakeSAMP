@@ -1,2 +1,2 @@
 //this file only defines samp version
-#define SAMP_037
+#define SAMP_03DL

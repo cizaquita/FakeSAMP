@@ -2,14 +2,16 @@ FakeSAMP
 =
 FakeSAMP is a fake client for SA-MP.
   
-Current version: v0.8.6-0.3.7.  
+Current version: v0.8.6-0.3.7DL.  
 Authors: jlfm, bartekdvd, P3ti.
 Special thanks to balika011, .silent, n3ptun0.  
 
-Edited by: Cizaquita.
+**Edited by: Cizaquita**
 
 Download Latest
 https://github.com/cizaquita/FakeSAMP/releases
+
+SA:MP Target version: 0.3DL tested and working. 
 
 --
 ### Client

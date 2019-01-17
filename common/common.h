@@ -8,10 +8,10 @@
 
 #include "SAMP_VER.h"
 
-#define RAKSAMP_VERSION "v0.8.6-0.3.7"
+#define RAKSAMP_VERSION "v0.8.6-0.3.7DL"
 
 #define NETCODE_CONNCOOKIELULZ 0x6969
-#define NETGAME_VERSION 4057
+#define NETGAME_VERSION 4062
 
 #define AUTHOR "jlfm, bartekdvd, P3ti"
 

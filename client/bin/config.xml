@@ -13,7 +13,7 @@ Avalable runmodes:
 			   followplayer="Cris_Iza1" followplayerwithvehicleid="295" followXOffset="-1.5" followYOffset="1.5" followZOffset="0.0"
 			   updatestats="1" minfps="20" maxfps="90" clientversion="0.3.7">
 
-	<server nickname="Cris_Iza" password="iza0000">127.0.0.1:7777</server>
+	<server nickname="MyNickname" password="">127.0.0.1:7777</server>
 
 	<intervals spam="150" fakekill="35" lag="20" joinflood="50" chatflood="20" classflood="30" bulletflood="25" />
 	<log objects="0" pickups="0" textlabels="0" textdraws="0" />
@@ -25,7 +25,7 @@ Avalable runmodes:
 	<!-- These get called when we successfully connected to a server. -->
 	<!-- <autorun>!selveh 4</autorun> -->
 	
-	<!-- Finds text from the chatbox and says something. -->
+	<!-- Finds text from the chatbox and says something or use commands, FakeSAMP Commands or InGame commands. -->
 	<find text="cris" say="/r que pasa bro ++nDime" bk_color="255 255 255" text_color="255 0 0" />
 	<find text="rcon" say="!runmode 0" bk_color="255 255 255" text_color="255 0 0" />
 	<find text="bare" say="!runmode 1" bk_color="255 255 255" text_color="255 0 0" />

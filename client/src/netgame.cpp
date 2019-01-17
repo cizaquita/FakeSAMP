@@ -530,6 +530,7 @@ void UpdateNetwork(RakClientInterface *pRakClient)
 {
 	unsigned char packetIdentifier;
 	Packet *pkt;
+	SYSTEMTIME time;
 
 	while(pkt = pRakClient->Receive())
 	{
@@ -551,8 +552,10 @@ void UpdateNetwork(RakClientInterface *pRakClient)
 			case ID_DISCONNECTION_NOTIFICATION:
 				if (pRakClient == ::pRakClient)
 				{
+					GetLocalTime(&time);
 					PlaySound("C:\\Users\\WINDOWS\\Desktop\\Desarrollos\\RakSAMP\\client\\src\\media\\alarma.wav", NULL, SND_FILENAME);
-					Log("[SAMP] Connection was closed by the server. Reconnecting in %d seconds.", iReconnectTime / 1000);
+					Log("[SAMP] Connection was closed by the server at -> %02d:%02d:%02d. Reconnecting in %d seconds.",
+						time.wHour, time.wMinute, time.wSecond, iReconnectTime / 1000);
 					MessageBox(NULL, "[SAMP] Connection was closed by the server.", "Error", MB_ICONERROR);
 					ExitProcess(0);
 					resetPools(1, iReconnectTime);
@@ -561,8 +564,10 @@ void UpdateNetwork(RakClientInterface *pRakClient)
 			case ID_CONNECTION_BANNED:
 				if (pRakClient == ::pRakClient)
 				{
+					GetLocalTime(&time);
 					PlaySound("C:\\Users\\WINDOWS\\Desktop\\Desarrollos\\RakSAMP\\client\\src\\media\\alarma.wav", NULL, SND_FILENAME);
-					Log("[SAMP] You are banned. Reconnecting in %d seconds.", iReconnectTime / 1000);
+					Log("[SAMP] You are banned. at -> %02d:%02d:%02d. Reconnecting in %d seconds.",
+						time.wHour, time.wMinute, time.wSecond, iReconnectTime / 1000);
 					MessageBox(NULL, "[SAMP] You are banned.", "Error", MB_ICONERROR);
 					ExitProcess(0);
 					resetPools(1, iReconnectTime);
@@ -571,8 +576,10 @@ void UpdateNetwork(RakClientInterface *pRakClient)
 			case ID_CONNECTION_ATTEMPT_FAILED:
 				if (pRakClient == ::pRakClient)
 				{
+					GetLocalTime(&time);
 					PlaySound("C:\\Users\\WINDOWS\\Desktop\\Desarrollos\\RakSAMP\\client\\src\\media\\alarma.wav", NULL, SND_FILENAME);
-					Log("[SAMP] Connection attempt failed. Reconnecting in %d seconds.", iReconnectTime / 1000);
+					Log("[SAMP] Connection attempt failed at -> %02d:%02d:%02d. Reconnecting in %d seconds.",
+						time.wHour, time.wMinute, time.wSecond, iReconnectTime / 1000);
 					MessageBox(NULL, "[SAMP] Connection attempt failed.", "Error", MB_ICONERROR);
 					ExitProcess(0);
 					resetPools(1, iReconnectTime);
@@ -581,8 +588,10 @@ void UpdateNetwork(RakClientInterface *pRakClient)
 			case ID_NO_FREE_INCOMING_CONNECTIONS:
 				if (pRakClient == ::pRakClient)
 				{
+					GetLocalTime(&time);
 					PlaySound("C:\\Users\\WINDOWS\\Desktop\\Desarrollos\\RakSAMP\\client\\src\\media\\alarma.wav", NULL, SND_FILENAME);
-					Log("[SAMP] The server is full. Reconnecting in %d seconds.", iReconnectTime / 1000);
+					Log("[SAMP] The server is full at -> %02d:%02d:%02d. Reconnecting in %d seconds.",
+						time.wHour, time.wMinute, time.wSecond, iReconnectTime / 1000);
 					MessageBox(NULL, "[SAMP] The server is full.", "Error", MB_ICONERROR);
 					ExitProcess(0);
 					resetPools(1, iReconnectTime);
@@ -591,8 +600,10 @@ void UpdateNetwork(RakClientInterface *pRakClient)
 			case ID_INVALID_PASSWORD:
 				if (pRakClient == ::pRakClient)
 				{
+					GetLocalTime(&time);
 					PlaySound("C:\\Users\\WINDOWS\\Desktop\\Desarrollos\\RakSAMP\\client\\src\\media\\alarma.wav", NULL, SND_FILENAME);
-					Log("[SAMP] Invalid password. Reconnecting in %d seconds.", iReconnectTime / 1000);
+					Log("[SAMP] Invalid password at -> %02d:%02d:%02d. Reconnecting in %d seconds.",
+						time.wHour, time.wMinute, time.wSecond, iReconnectTime / 1000);
 					MessageBox(NULL, "[SAMP] Invalid password.", "Error", MB_ICONERROR);
 					ExitProcess(0);
 					resetPools(1, iReconnectTime);
@@ -601,8 +612,10 @@ void UpdateNetwork(RakClientInterface *pRakClient)
 			case ID_CONNECTION_LOST:
 				if (pRakClient == ::pRakClient)
 				{
+					GetLocalTime(&time);
 					PlaySound("C:\\Users\\WINDOWS\\Desktop\\Desarrollos\\RakSAMP\\client\\src\\media\\alarma.wav", NULL, SND_FILENAME);
-					Log("[SAMP] The connection was lost. Reconnecting in %d seconds.", iReconnectTime / 1000);
+					Log("[SAMP] The connection was lost at -> %02d:%02d:%02d. Reconnecting in %d seconds.",
+						time.wHour, time.wMinute, time.wSecond, iReconnectTime / 1000);
 					MessageBox(NULL, "[SAMP] The connection was lost.", "Error", MB_ICONERROR);
 					ExitProcess(0);
 					resetPools(1, iReconnectTime);
