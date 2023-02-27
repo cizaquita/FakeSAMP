@@ -1,4 +1,4 @@
-FakeSAMP
+FakeSAMP/RAKSAMP
 =
 FakeSAMP is a fake client for SA-MP.
   
